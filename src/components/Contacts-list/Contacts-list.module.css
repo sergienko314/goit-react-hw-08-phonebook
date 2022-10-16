@@ -1,0 +1,81 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list {
+  box-sizing: border-box;
+  width: 500px;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(117, 84, 227, 0.122);
+  padding: 5px;
+  border-radius: 10px ;
+}
+
+.item:hover {
+  text-decoration: underline;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  font-size: 20px;
+}
+
+.tel {
+  display: inline-block;
+  width: 30%;
+  font-size: 16px;
+  text-align: left;
+}
+
+.btnEd {
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 10px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  color: black;
+  background-color: rgb(224, 241, 116);
+
+  cursor: pointer;
+  transition: all ease-in 250ms;
+}
+
+.btnDel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  color: black;
+  background-color: rgb(94, 229, 94);
+
+  cursor: pointer;
+  transition: all ease-in 250ms;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: white;
+  background-color: var(--accent-color);
+}
