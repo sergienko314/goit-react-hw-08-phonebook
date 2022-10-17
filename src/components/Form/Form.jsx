@@ -48,7 +48,7 @@ export const Form = () => {
       toast.warning(`${name} is already in contacts!`);
       return;
     };
-
+    
      editContact ? dispatch(updateContact({...{name, number}, id:editContact.id})) : dispatch(addContact({name, number}));
     formReset();
   };

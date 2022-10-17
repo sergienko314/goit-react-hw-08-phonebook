@@ -16,5 +16,8 @@ export const deleteContactApi = async id => {
 };
 
 export const updateContactsApi = async data => {
-  return privateApi.patch(`/contacts/${data.id}`, data);
+  return privateApi.patch(`/contacts/${data.id}`, {
+    name: data.name,
+    number: data.number,
+  });
 };
